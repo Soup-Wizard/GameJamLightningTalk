@@ -1,0 +1,92 @@
+[gd_scene load_steps=15 format=3 uid="uid://xld0sj6tnaep"]
+
+[ext_resource type="Texture2D" uid="uid://dyc2up4ytnpht" path="res://assets/1stplacewow.png" id="1_bw51b"]
+[ext_resource type="Script" path="res://main.gd" id="1_dmx6l"]
+[ext_resource type="Texture2D" uid="uid://c3ys64txttnnp" path="res://assets/gameJamPage.png" id="2_e4yxu"]
+[ext_resource type="Texture2D" uid="uid://dr32bobspdvqp" path="res://assets/gameJams.png" id="2_i2omu"]
+[ext_resource type="Texture2D" uid="uid://ddka0rfbgdk7l" path="res://assets/godotScene.png" id="3_dhl40"]
+[ext_resource type="Texture2D" uid="uid://bq07r4jraohhe" path="res://assets/godotScene2.png" id="3_hqdrp"]
+[ext_resource type="Texture2D" uid="uid://bsq7d4yydt716" path="res://assets/scoreSpaceJam.png" id="5_ac4ri"]
+[ext_resource type="Texture2D" uid="uid://b6saoix0sduhy" path="res://assets/brackeysJam.png" id="6_2u3vn"]
+[ext_resource type="Texture2D" uid="uid://cx164rn2f7j4q" path="res://assets/superhot.png" id="6_s55nm"]
+[ext_resource type="Texture2D" uid="uid://pdcqv7s8yu8w" path="res://assets/baba.png" id="7_nc17e"]
+[ext_resource type="Texture2D" uid="uid://bw7ne054plme2" path="res://assets/pirateJam.png" id="8_6tavp"]
+[ext_resource type="Texture2D" uid="uid://bwtka8yjbudq0" path="res://assets/surgeon.png" id="8_cbw1g"]
+[ext_resource type="PackedScene" uid="uid://88hmftfdu4tu" path="res://background.tscn" id="8_hf88r"]
+[ext_resource type="Texture2D" uid="uid://c58wvklutho1p" path="res://assets/itch.png" id="14_e1m2i"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_dmx6l")
+
+[node name="gamejams" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1, 1)
+texture = ExtResource("2_i2omu")
+
+[node name="pirateJam" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(969.778, 545.5)
+scale = Vector2(1.01019, 1.01019)
+texture = ExtResource("8_6tavp")
+
+[node name="gameJamPage" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(965, 548)
+scale = Vector2(1.01667, 1.01667)
+texture = ExtResource("2_e4yxu")
+
+[node name="brackeysJam" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(969.778, 545.5)
+scale = Vector2(1.01019, 1.01019)
+texture = ExtResource("6_2u3vn")
+
+[node name="scoreSpaceJam" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(968.889, 545)
+scale = Vector2(1.00926, 1.00926)
+texture = ExtResource("5_ac4ri")
+
+[node name="superhot" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(968.889, 545)
+scale = Vector2(1.00926, 1.00926)
+texture = ExtResource("6_s55nm")
+
+[node name="surgeon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(963, 542)
+scale = Vector2(1.00361, 1.00361)
+texture = ExtResource("8_cbw1g")
+
+[node name="baba" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 543.875)
+scale = Vector2(0.801667, 0.801667)
+texture = ExtResource("7_nc17e")
+
+[node name="godotScene" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(962.375, 543.75)
+scale = Vector2(1.00143, 1.03009)
+texture = ExtResource("3_dhl40")
+
+[node name="godotScene2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(962.375, 543.75)
+scale = Vector2(1.00143, 1.03009)
+texture = ExtResource("3_hqdrp")
+
+[node name="rank" parent="." instance=ExtResource("8_hf88r")]
+
+[node name="51st" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1591, 543)
+scale = Vector2(2.6599, 2.6599)
+texture = ExtResource("1_bw51b")
+
+[node name="itch" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(961.703, 542.366)
+scale = Vector2(1.01189, 1.06242)
+texture = ExtResource("14_e1m2i")

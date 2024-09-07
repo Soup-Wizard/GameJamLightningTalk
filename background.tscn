@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://88hmftfdu4tu"]
+
+[ext_resource type="Texture2D" uid="uid://dyc2up4ytnpht" path="res://assets/1stplacewow.png" id="1_1ivat"]
+[ext_resource type="Script" path="res://background.gd" id="2_3pcn5"]
+
+[node name="background" type="Sprite2D"]
+visible = false
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(964.25, 542.75)
+scale = Vector2(1.50078, 2.6074)
+texture = ExtResource("1_1ivat")
+script = ExtResource("2_3pcn5")
+
+[node name="theTruth" type="Label" parent="."]
+texture_filter = 2
+offset_left = -641.0
+offset_top = -210.0
+offset_right = 638.0
+offset_bottom = 208.0
+theme_override_font_sizes/font_size = 269
+text = "51st"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="cover" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(-211.912, 4.31462)
+rotation = -1.5708
+scale = Vector2(0.194235, 0.388648)
+texture = ExtResource("1_1ivat")
+
+[node name="revealTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="timeout" from="revealTimer" to="." method="_on_reveal_timer_timeout"]
